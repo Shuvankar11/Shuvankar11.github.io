@@ -34,7 +34,6 @@
             color: var(--text-main); 
             background-color: var(--bg-dark); 
             overflow-x: hidden;
-            /* Dotted Background Grid */
             background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
             background-size: 24px 24px;
             background-attachment: fixed;
@@ -102,7 +101,6 @@
             100% { transform: translateY(0px); }
         }
 
-        /* REPEATING SCROLL ANIMATION CSS */
         .reveal {
             opacity: 0;
             transform: translateY(50px);
@@ -153,7 +151,6 @@
             line-height: 1.2;
         }
 
-        /* Name Ek line me rakhne ka code yahan add kiya hai */
         header h1 span { 
             color: var(--cyan); 
             white-space: nowrap; 
@@ -366,16 +363,14 @@
         .c-text p, .c-text a { color: var(--text-muted); text-decoration: none; font-size: 0.85rem; }
         .c-text a:hover { color: var(--cyan); }
 
-        /* Responsive Size Fixes for Mobile */
+        /* Responsive */
         @media (max-width: 768px) {
-            /* Text size set to perfectly fit one line on mobile */
             header h1 { font-size: 1.8rem; } 
             .glass-card { padding: 25px; }
             .profile-img { width: 130px; height: 130px; }
             .project-card { min-width: 280px; max-width: 280px; }
         }
         
-        /* Ekdum chhote phone ke liye */
         @media (max-width: 380px) {
             header h1 { font-size: 1.5rem; }
         }
@@ -415,7 +410,7 @@
             <div class="timeline-item" style="margin-bottom: 0;">
                 <div class="timeline-title">Outward Quality Checking & AOI Operator</div>
                 <div class="timeline-subtitle">Kaynes Technology India Limited</div>
-                <div class="timeline-date"><i class="fas fa-map-marker-alt"></i> Mysore, Karnataka &nbsp;|&nbsp; <i class="far fa-calendar-alt"></i> Started: Sep 2025</div>
+                <div class="timeline-date"><i class="fas fa-map-marker-alt"></i> Mysore, Karnataka &nbsp;|&nbsp; <i class="far fa-calendar-alt"></i> Started: 7 September 2025</div>
                 <p style="color: var(--text-muted); font-size: 0.95rem;">Conducted outward quality checking and operated Automatic Optical Inspection (AOI) systems to identify defects and ensure stringent quality standards within the electronics manufacturing domain.</p>
             </div>
         </div>
@@ -445,7 +440,7 @@
         </div>
 
         <div class="glass-card reveal">
-            <h2 class="section-title"><i class="fas fa-microchip"></i> Hardware & Software Nexus</h2>
+            <h2 class="section-title"><i class="fas fa-microchip"></i> Core Skills & Expertise</h2>
             <div class="skills-container">
                 <div class="skill-badge">Basic Electronics</div>
                 <div class="skill-badge">Instrumentation</div>
@@ -453,6 +448,7 @@
                 <div class="skill-badge">AOI Operator</div>
                 <div class="skill-badge">Quality Control</div>
                 <div class="skill-badge">Problem Solving</div>
+                <div class="skill-badge">Good Communication</div>
             </div>
         </div>
 
@@ -461,6 +457,14 @@
             
             <div class="projects-horizontal-wrap reveal">
                 
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-cloud-sun"></i></div>
+                    <h3 class="project-title">Skylive</h3>
+                    <div class="project-subtitle">Weather Application</div>
+                    <p class="project-desc">A sleek and responsive weather application that fetches real-time meteorological data to provide accurate forecasts and atmospheric conditions.</p>
+                    <a href="https://shuvankar11.github.io/Skylive/" target="_blank" class="btn-project"><i class="fas fa-external-link-alt"></i> View Live Project</a>
+                </div>
+
                 <div class="project-card">
                     <div class="project-icon"><i class="fas fa-chess-knight"></i></div>
                     <h3 class="project-title">Online Chess</h3>
