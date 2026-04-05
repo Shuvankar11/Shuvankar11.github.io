@@ -153,7 +153,12 @@
             line-height: 1.2;
         }
 
-        header h1 span { color: var(--cyan); }
+        /* Name Ek line me rakhne ka code yahan add kiya hai */
+        header h1 span { 
+            color: var(--cyan); 
+            white-space: nowrap; 
+            display: inline-block;
+        }
 
         header h2 {
             font-size: 1.1rem;
@@ -286,7 +291,7 @@
             border: 1px solid var(--card-border);
             border-radius: 16px;
             padding: 25px;
-            min-width: 320px; /* Card ki width fix ki hai taaki horizontal ho */
+            min-width: 320px; 
             max-width: 320px;
             scroll-snap-align: start;
             transition: transform 0.3s ease;
@@ -361,11 +366,18 @@
         .c-text p, .c-text a { color: var(--text-muted); text-decoration: none; font-size: 0.85rem; }
         .c-text a:hover { color: var(--cyan); }
 
+        /* Responsive Size Fixes for Mobile */
         @media (max-width: 768px) {
-            header h1 { font-size: 2.2rem; }
+            /* Text size set to perfectly fit one line on mobile */
+            header h1 { font-size: 1.8rem; } 
             .glass-card { padding: 25px; }
             .profile-img { width: 130px; height: 130px; }
             .project-card { min-width: 280px; max-width: 280px; }
+        }
+        
+        /* Ekdum chhote phone ke liye */
+        @media (max-width: 380px) {
+            header h1 { font-size: 1.5rem; }
         }
     </style>
 </head>
@@ -540,14 +552,14 @@
                 var elementVisible = 50; 
                 
                 if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("active"); // Dikhayega
+                    reveals[i].classList.add("active");
                 } else {
-                    reveals[i].classList.remove("active"); // Scroll up karne par dubara hide karega taaki firse animate ho sake!
+                    reveals[i].classList.remove("active"); 
                 }
             }
         }
         window.addEventListener("scroll", reveal);
-        reveal(); // Page load hote hi ek baar chalayega
+        reveal(); 
     </script>
 
 </body>
